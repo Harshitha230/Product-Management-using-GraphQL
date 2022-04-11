@@ -21,6 +21,7 @@ function Login(props) {
   function onSubmit(e) {
     e.preventDefault()
     let errormsg = ''
+    //Check if all fields are filled
     if (!(field.email || field.password)) {
       errormsg = 'All fields must be filled'
       swal({
@@ -46,6 +47,7 @@ function Login(props) {
           icon: 'success',
           type: 'success',
         })
+        //Set user token 
         localStorage.setItem('token', res.token)
         localStorage.setItem('id', res.id)
         navigate('/dashboard')
