@@ -16,6 +16,7 @@ import {
 } from '../resolvers/products.resolvers'
 import { signUpResolver, loginResolver } from '../resolvers/users.resolvers'
 
+//Queries
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
@@ -31,6 +32,7 @@ const RootQuery = new GraphQLObjectType({
   },
 })
 
+//Mutations
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
