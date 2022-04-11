@@ -10,6 +10,7 @@ function DeleteProduct(props) {
   const [deleteProductMutation] = useMutation(DELETE_PRODUCT)
 
   function deleteProduct(id) {
+    //Delete existing product
     deleteProductMutation({ variables: { id: props.obj.id } })
       .then(result => {
         swal({
