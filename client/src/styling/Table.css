@@ -1,12 +1,25 @@
 .table-wrapper h1 {
-    margin: 1em 0 0.5em 0;
-	color: rgb(15, 14, 14);
-	font-weight: normal;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style:bold;  
-	font-size: 36px;
-	line-height: 42px;
-	text-transform: uppercase;
-	text-shadow: 0 2px white, 0 3px grey;
-    
+  margin: 1em 0 0.5em 0;
+  color: rgb(15, 14, 14);
+  font-weight: normal;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-style: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px grey;
+}
+
+.table-wrapper {
+  margin-top: 100px;
+}
+
+.bt-4 {
+  display: flex;
+}
+
+.table-rows {
+  font-size: 18px;
+  font-family: cursive;
 }

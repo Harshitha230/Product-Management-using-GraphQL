@@ -1,1 +1,29 @@
- 
+.wrapper {
+  margin-top: 200px;
+}
+
+.wrapper .avatar {
+  color: blue;
+  background: white;
+  font-size: 50;
+  width: fit-content;
+}
+
+.wrapper h3 {
+  margin-top: 20px;
+  font-family: cursive;
+}
+
+.wrapper .tf-1 {
+  margin-top: 20px;
+}
+
+.wrapper .button_style {
+  font-size: 18px;
+  font-family: cursive;
+}
+
+.wrapper .link_style {
+  font-size: 20px;
+  font-family: cursive;
+}

@@ -1,4 +1,4 @@
-import {ApolloClient, InMemoryCache} from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client'
 
 const defaultOptions = {
   watchQuery: {
@@ -11,11 +11,10 @@ const defaultOptions = {
   },
 }
 
- const client = new ApolloClient({
+const client = new ApolloClient({
   uri: 'http://localhost:9000/graphql',
   cache: new InMemoryCache(),
   defaultOptions: defaultOptions,
-});
-
+})
 
 export default client
