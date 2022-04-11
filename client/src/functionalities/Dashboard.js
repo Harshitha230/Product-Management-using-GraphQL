@@ -11,6 +11,7 @@ function Dashboard(props) {
   const { error, data } = useQuery(ALL_PRODUCTS)
 
   function logout() {
+    //Set user token to null
     localStorage.setItem('token', null)
     navigate('/login')
   }
