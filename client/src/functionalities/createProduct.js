@@ -33,6 +33,7 @@ function CreateProduct(props) {
   function onSubmit(e) {
     e.preventDefault()
     let errormsg = ''
+    //Check if all fields are filled
     if (!(name || price || quantity)) {
       errormsg = 'All fields must be filled'
       swal({
@@ -45,7 +46,8 @@ function CreateProduct(props) {
       console.log(errormsg)
       return
     }
-
+    
+    //Create new product
     createProductMutation({
       variables: {
         id: props.id,
