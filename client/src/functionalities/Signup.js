@@ -20,6 +20,7 @@ function Signup(props) {
   function onSubmit(e) {
     e.preventDefault()
     let errormsg = ''
+    //Check if all fields are filled
     if (!(field.name || field.email || field.password)) {
       errormsg = 'All fields must be filled'
       swal({
@@ -32,7 +33,8 @@ function Signup(props) {
       console.log(errormsg)
       return
     }
-
+    
+    //Create new user
     signUpMutation({
       variables: {
         name: field.name,
